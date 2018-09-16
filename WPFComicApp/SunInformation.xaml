@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPFComicApp.SunInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFComicApp"
+        mc:Ignorable="d"
+        Title="SunInformation" Height="450" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="LoanSunInfo" Margin="5" Click="LoanSunInfo_Click">Load Sun Information</Button>
+        <TextBlock x:Name="sunriseText" Margin="5" Grid.Row="1"></TextBlock>
+        <TextBlock x:Name="sunsetText" Margin="5" Grid.Row="2"></TextBlock>
+    </Grid>
+</Window>
