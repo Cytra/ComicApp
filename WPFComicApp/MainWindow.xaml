@@ -1,0 +1,34 @@
+﻿<Window x:Class="WPFComicApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFComicApp"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Button x:Name="previousImageButton" Grid.Row="0" Grid.Column="1" Margin="5" Click="previousImageButton_Click">Previous</Button>
+        <Button x:Name="sunInformationButton" Grid.Row="0" Grid.Column="2" Margin="5">Sun Information</Button>
+        <Button x:Name="nextImageButton" Grid.Row="0" Grid.Column="3" Margin="5" Click="nextImageButton_Click">Next</Button>
+
+        <Image Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="5" x:Name="comicImage"></Image>
+
+    </Grid>
+</Window>
